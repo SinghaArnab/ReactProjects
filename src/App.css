@@ -1,0 +1,837 @@
+body {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+/* /////////////////////////////Main Nav///////////////////////// */
+
+.Main_nav_name{
+    font-size: 32px;
+    background: -webkit-linear-gradient(#eee, rgb(255, 123, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subnavlogo{
+  font-size: 23px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    color: rgb(243 177 78);
+}
+
+
+.subnavitems .active{
+  background-color:rgb(131, 225, 131);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+/* //////////////////////Dark mode///////////////////////////////// */
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* //////////////////////////////WeatherAPP//////////////////////////// */
+
+.flex-container {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1px 10px;
+}
+
+.flex-container >.Weather_div {
+    font-size: 30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+.Weather_div:hover{
+  font-size: 30px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  color: rgb(255, 114, 114);
+}
+
+.Mode{
+  font-size:40px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.logo{
+  font-weight: bolder;
+}
+
+.mode{
+  color: rgb(3, 3, 3);
+  rotate:180deg;
+  transition: 1s;
+}
+#mode{
+  transition: 1.5s;
+}
+
+
+/* ////////////////////////Seach bar//////////////////////////////// */
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-left: 30px;
+}
+
+.input-box {
+  position: relative;
+  height: 45px;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  margin: 0 20px;
+  border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-box input[type=text]:focus{
+  border: 3px solid red;
+  border-radius: 25px;
+  transition:ease;
+}
+
+.input-box i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  font-size: 25px;
+  color: #dcba0e;
+}
+.input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none; 
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  padding: 0 155px 0 65px;
+  background-color: transparent;
+}
+
+.Weather_body{
+  height: 82.2vh;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Weather_h1{
+  font-size: 30px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Weather_h1s{
+  font-size: 50px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.Weather_image{
+  margin-top: 2%;
+  width: 70%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Weather_det{
+  width: 70%;
+  height: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Weather_det_div{
+  margin: 1%;
+  width: 150px;
+  background-color: rgba(222, 222, 135, 0.5);
+  opacity: 0.50;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Weather_text_box{
+  background-color: #dcba0e;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Weather_text2_box{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Weather_image_box{
+  width: 250px;        
+} 
+img{
+  max-width: 100%;
+  max-height: 100%;
+  display: block; 
+}
+
+@media only screen and (max-width: 600px){
+  .search {
+    width: 70%;
+    margin-left: 10px;
+  }
+  .input-box {
+    height: 40px;
+    margin: 0 8px;
+  }
+  .input-box i {
+    left: 12px;
+    font-size: 25px;
+  }
+  .input-box input {
+    padding: 0 12px 0 50px;
+  }
+  .Weather_det{
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Weather_det_div{
+    margin: 2%;
+    width: 45%;
+    background-color: #56fcff;
+    display: flex;
+  }
+  .Weather_image{
+    justify-content: space-between;
+    width: 88%;
+  }
+}
+
+/* //////////////////////////////Filterdata////////////////////////// */
+
+.main-table-con{
+  overflow-x:auto;
+}
+
+
+#Main_Table{
+  width: 100%;
+}
+
+#Main_Table th{
+  padding: 10px 0px 10px 0px;
+  background-color: #EB6440;
+}
+
+.Table_th_td{
+  border:1px solid rgb(0, 0, 0);
+}
+.Table_tr:nth-child(even){
+  background-color: #CE7777;
+}
+.Table_tr:nth-child(odd){
+  background-color: #E8C4C4;
+}
+
+
+/* ////////////////////////Productshop//////////////////////////////////// */
+
+.logoname{
+  font-size: xx-large;
+  font-weight:bold;
+}
+.logonameextra{
+  font-size: x-large;
+  font-weight: 700;
+}
+.mainnav_contain{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.shopcart{
+  color: rgb(112, 229, 131);
+}
+.Product_cart_icon{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction:row;
+}
+.shopingpricetext{
+  color: #EB6440;
+  font-size: x-large;
+}
+
+.Product_body{
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Product_cart{
+  background-color: #ffffff;
+  margin: 40px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  position:relative;
+}
+
+.Product_img_tab>img{
+  mix-blend-mode:multiply;
+}
+
+.product_price_tab{
+  position: absolute;
+  bottom: 0%;
+}
+
+.shoppingbtn1,.shoppingbtn2{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+}
+.shoppingbtn1:hover{
+  background-color: rgb(254, 254, 132);
+  color: #030303;
+}
+.shoppingbtn2:hover{
+  background-color: rgb(194, 254, 223);
+  color: #030303;
+}
+.cart_text_title{
+  font-size:x-large;
+  font-weight: bolder;
+}
+
+.loveimg_cart{
+  font-size:x-large;
+  color: #EB6440;
+  text-shadow: 0 0 3px #efa9a9, 0 0 5px #fe7478;
+}
+
+.loveimg_cart:hover{
+  color: #ff0a0a;
+  outline: #dcba0e;
+  scale: 1.1;
+}
+/* //////////////////////Product_cartbody///////////////////////////// */
+
+.Product_cartbody{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.Product_cartPage{
+  background-color: #ffffff;
+  margin: 40px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  position:relative;
+}
+
+.Product_img_tab_cart>img{
+
+  width: 200px;
+  height: 120px;
+
+}
+
+/* //////////////////////////////////Todo//////////////////////////////////////////////// */
+
+.TOdo_input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 170px;
+  width: 500px;
+  background-color: #CCD6A6;
+}
+
+.Container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.Todo-input-box{
+  display: block;
+  width: 440px;
+  max-width: 100%;
+  height: 52px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 0px 0px;
+}
+
+.Todo-input-box[type=text]:focus{
+  outline: none;
+  border: 2px solid rgb(28, 168, 147);
+  transition:ease;
+  padding: 4px;
+}
+
+
+.itm{
+  color: rgb(255, 255, 255);
+  background-color: #5f4d4d;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  width: 300px;
+  height: 220px;
+  margin: 1em;
+  padding: 1em;
+  border: 20px solid #F37878;
+  scroll-behavior: smooth;
+  overflow-wrap: break-word;
+  
+}
+
+.btn{
+  width: 100%;
+  background-color: rgb(114, 248, 243);
+}
+.btn2{
+  width: 100%;
+  background-color: rgb(255, 120, 96);
+  color: azure;
+}
+
+
+.mainitem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.itm >h1,h3{
+  border-bottom: 2px solid burlywood;
+  font-size: larger;
+  font-weight: 700;
+}
+
+.itm>h3{
+  overflow: auto;
+  overflow-wrap: break-word;
+}
+
+.btnD{
+ background-color: #125B50;
+ color: azure;
+}
+.mystyle{
+  background-color: #66DE93;
+}
+
+@media only screen and (max-width: 600px){
+  
+  
+.TOdo_input{
+
+  width: 325px;
+}
+
+.Todo-input-box{
+  width: 260px;
+}
+
+}
+
+/* ///////////////////////////////////////////////Quiz/////////////////////////////////// */
+
+
+.quizimg{
+  background-image: url("../public/img/quizback.svg");
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size:cover;
+}
+
+.transparentDiv{
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    opacity: 1;
+    transition: all 1s;
+}
+
+.nextbtn:hover{
+  scale: 1.1;
+}
+
+.QuizMain{
+  background-image: url("../public/img/Quizcardback.svg");
+}
+
+/* /////////////////////////////////////QUiz card///////////////////////////////////*/
+
+.quizcardmain{
+  background-image: url("../public/img/Quizcardback.svg");
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size:cover;
+  transition: transform .4s
+}
+
+.Quiztext{
+  font-family: Dosis, sans-serif;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.quizcard1,.quizcard2,.quizcard3,.quizcard4{
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size:cover;
+  border:white 4px solid;
+  transition: transform .4s
+}
+
+.quizcard1{
+  background-image: url(https://reconshell.com/wp-content/uploads/2021/10/html.png);
+}
+.quizcard2{
+  background-image: url(https://cdn.geekboots.com/geek/javascript-hero-1652702096795.webp);
+}
+.quizcard3{
+  background-image: url(https://www.simplilearn.com/ice9/free_resources_article_thumb/how-to-become-a-php-developer-2.jpg);
+}
+.quizcard4{
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFMM7KhfTV-VquXldD3ArgQLmO7SXt8AvqjA&usqp=CAU);
+}
+
+
+.quizcard4:hover{
+  transform: scale(1.25);
+}
+.quizcard3:hover{
+  transform: scale(1.25);
+}
+.quizcard2:hover{
+  transform: scale(1.25);
+}
+.quizcard1:hover{
+  transform: scale(1.25);
+}
+
+
+
+.card_Select{
+  width: 250px;
+  outline: none;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+  cursor: pointer;
+  background-color: #434242;
+  color: rgb(222, 141, 141);
+}
+
+.card_Select:focus,
+.card_Select:hover{
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+/* /////////////////////////////////Card Operation//////////////////////////////// */
+
+.CurdHOme{
+  background-image: url('../public/img/CardBack.svg');
+}
+
+.Table_tr_Curd{
+  width: 100%;
+  background-color: #D8F0DA;
+  border: 1px;
+  min-width: 100%;
+  position: relative;
+  opacity: 0.97;
+  background: transparent;
+}
+
+#Main_Table_Curd>th{
+  padding: 10px 0px 10px 0px;
+  background-color: #D8F0DA;
+}
+
+
+.subnavlogo2{
+  font-size: 35px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+}
+
+.main{
+
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  align-items:center;
+  height:77.2vh;
+  }
+  
+  .sub_a{
+     width:50%;
+     height:80%;
+     padding:20px ;
+  }
+  
+  .sub_b{
+  width:40%;
+  height:80%;
+  margin:20px;
+  
+  }
+
+/* .curdImg{
+  mix-blend-mode:multiply;
+} */
+  
+  
+.cardInput,select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+.CardBtn{
+    background-color: #FFE15D;
+    color: rgb(0, 0, 0);
+    padding: 8px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+ 
+  }
+  
+.CardBtn:hover {
+    background-color: #ff7f6b;
+    color: rgb(255, 255, 255);
+    scale: 1.1;
+
+  }
+  
+  @media only screen and (max-width: 600px) {
+  
+   .main{
+   flex-direction:column;
+   
+   }
+   .sub_a{
+    width:90%;
+    height:70%;
+    padding:20px ; 
+    padding-top: 30px;
+ }
+
+  }
+
+  /* /////////////////////////RandomQuots/////////////////////////// */
+
+  .RandomQuots{
+    background-image: url('../public/img/back7.svg');
+    animation: pan 6s infinite alternate linear;
+  }
+
+  .RandomQuotsChild{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  /* ///////////////////////////Firebase card////////////////////// */
+
+  @keyframes pan {
+    100% {
+      background-position: 15% 50%;
+    }
+  }
+
+  .FireCardBack{
+    background-image: url('../public/img/back3.svg');
+    animation: pan 6s infinite alternate linear;
+  }
+  
+  .Firecard_a{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 20%;
+    height: 92%;
+    background-image: url('../public/img/back5.svg');
+    animation: pan 6s infinite alternate linear;
+  }
+
+  .fireCard2{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .firebaselabel{
+    float: left;
+    color: #56fcff;
+  }
+
+
+
+  /* ///// */
+
+  table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  
+  @media screen and (max-width: 600px) {
+    table {
+      border: 0;
+    }
+  
+    table caption {
+      font-size: 1.3em;
+    }
+    
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    
+    table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    
+    table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    
+    table td::before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  @media only screen and (max-width: 600px){
+    .sub_a{
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  
+  
