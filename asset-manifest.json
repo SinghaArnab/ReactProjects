@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/ReactProjects/static/css/main.4828b77c.css",
+    "main.js": "/ReactProjects/static/js/main.97d7f4d8.js",
+    "static/media/back3.svg": "/ReactProjects/static/media/back3.f697f8c53866f291d27c.svg",
+    "index.html": "/ReactProjects/index.html",
+    "static/media/CardBack.svg": "/ReactProjects/static/media/CardBack.d078300161dd85d6b423.svg",
+    "static/media/back5.svg": "/ReactProjects/static/media/back5.1286d94ba462500d365d.svg",
+    "static/media/quizback.svg": "/ReactProjects/static/media/quizback.eb30f739fa31519e65af.svg",
+    "static/media/Quizcardback.svg": "/ReactProjects/static/media/Quizcardback.24c644d6e5ed394b98c2.svg",
+    "static/media/back7.svg": "/ReactProjects/static/media/back7.bef1f0a51994042a9027.svg",
+    "main.4828b77c.css.map": "/ReactProjects/static/css/main.4828b77c.css.map",
+    "main.97d7f4d8.js.map": "/ReactProjects/static/js/main.97d7f4d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4828b77c.css",
+    "static/js/main.97d7f4d8.js"
+  ]
+}
